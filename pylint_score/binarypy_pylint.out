@@ -1,0 +1,7 @@
+************* Module binary
+binary.py:56:4: R0201: Method could be a function (no-self-use)
+binary.py:107:8: R1705: Unnecessary "elif" after "return" (no-else-return)
+
+------------------------------------------------------------------
+Your code has been rated at 9.50/10 (previous run: 9.50/10, +0.00)
+

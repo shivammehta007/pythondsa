@@ -2,7 +2,8 @@
 """
 Implementation of Binary Search
 
-Binary Search is an algorithm which works on sorted arrays, by checking weather the middle element is lesser or greater than the searching element
+Binary Search is an algorithm which works on sorted arrays, by checking weather
+the middle element is lesser or greater than the searching element
    Complexity:
 
    Best Case: O(1)
@@ -24,7 +25,7 @@ Typical Usage Examples:
 >>> index = binary.search(array, element)
 -1
 
-Input Parameters: 
+Input Parameters:
     recursion: True or False to use recursion or not
 
 Methods:
@@ -39,7 +40,7 @@ class Binary:
     Implemenation of Binary Search
 
     Input of the seach should always be a sorted array, with element
-    
+
     Attributed:
         recursion: A boolean indication of recusive method or not
 
@@ -49,77 +50,77 @@ class Binary:
         Sets the searching algorithm by recursion parameter
         """
         self.recursion = recursion
-        self.search = self.without_recursion if recursion else self.with_recursion
-
+        self.search = self.with_recursion if recursion \
+            else self.without_recursion
 
     def without_recursion(self, array, element):
         """
         Binary Search without recursion
 
         Uses a linear approach instead of recusrion
-        
-        Parameters: 
+
+        Parameters:
             array: list
             element: element to be searched
-        
-        Returns: 
+
+        Returns:
             -1: if element not found
             int: index of element in arrays
         """
         start_pointer = 0
-        end_pointer = len(array)
-
-        while start_pointer < end_pointer:
-            mid = int((start_pointer + end_pointer) / 2)
-            if array[mid] == element:
-                return mid
-            elif array[mid] > element:
+        end_pointer = len(array) - 1
+        index = -1
+        while start_pointer <= end_pointer:
+            mid = start_pointer + (end_pointer - start_pointer) // 2
+            if array[mid] > element:
                 end_pointer = mid - 1
-            else:
+            elif array[mid] < element:
                 start_pointer = mid + 1
+            else:
+                return mid
 
-        return -1
+        return index
 
-    def with_recursion(array, element, start_pointer=-1, end_pointer=-1):
+    def with_recursion(self, array, element, start_pointer=-1, end_pointer=-1):
         """
         Binary Search with recursion
 
-        Uses a recursive approach to search the array 
-        Parameters: 
+        Uses a recursive approach to search the array
+        Parameters:
             array: list
             element: element to be searched
             start_pointer: used to point the starting location in recursion
             end_pointer: used to point the end location in recursion
 
-        Returns: 
+        Returns:
             -1: if element not found
             int: index of element in arrays
         """
         if start_pointer == end_pointer == -1:
             start_pointer = 0
-            end_pointer = len(array)
-        if start_pointer < end_pointer:
+            end_pointer = len(array) - 1
+
+        if start_pointer > end_pointer:
             return -1
 
-        mid = int((start_pointer + end_pointer)/2)
+        mid = start_pointer + (end_pointer - start_pointer) // 2
         if array[mid] == element:
             return mid
         elif array[mid] > element:
-           self.with_recursion(array, element, start_pointer, mid-1)
+            return self.with_recursion(array, element, start_pointer, mid-1)
         else:
-            self.with_recursion(array, element, mid+1, end_pointer)
-
+            return self.with_recursion(array, element, mid+1, end_pointer)
 
 
 if __name__ == '__main__':
-    bs = Binary(recursion=True)
-    a = [0, 1, 2, 3, 4, 5, 6]
-    x = 4
-    print(bs.search(a, x))
-    x = 9
-    print(bs.search(a, x))
-    bs = Binary()
-    x = 4
-    print(bs.search(a, x))
-    x = 9
-    print(bs.search(a, x))
+    BS = Binary(recursion=True)
+    A = [0, 1, 2, 3, 4, 5, 6]
+    X = 9
+    print(BS.search(A, X))
+    X = 4
+    print(BS.search(A, X))
+    BS = Binary()
+    X = 4
+    print(BS.search(A, X))
+    X = 9
+    print(BS.search(A, X))
