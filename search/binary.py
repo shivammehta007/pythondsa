@@ -114,13 +114,10 @@ class Binary:
 
 if __name__ == '__main__':
     BS = Binary(recursion=True)
-    A = [0, 1, 2, 3, 4, 5, 6]
-    X = 9
-    print(BS.search(A, X))
-    X = 4
-    print(BS.search(A, X))
-    BS = Binary()
-    X = 4
-    print(BS.search(A, X))
-    X = 9
-    print(BS.search(A, X))
+    ELEMENT = [0, 1, 2, 3, 4, 5, 6]
+    X = [9, 4, 3, 10]
+    RESULTS = [-1, 4, 3, -1]
+
+    for i, x in enumerate(X):
+        assert BS.search(ELEMENT, x) == RESULTS[i]
+    print("Tests Sucessfull")
