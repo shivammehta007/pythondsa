@@ -105,3 +105,6 @@ venv.bak/
 
 # Emacs
 *~
+
+# MacOs
+.DS_Store

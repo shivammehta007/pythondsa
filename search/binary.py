@@ -32,7 +32,7 @@ Input Parameters:
 
 Methods:
     search: array -> input array type list
-    element: # element to be searched for
+            element: # element to be searched for
 
 """
 
