@@ -20,9 +20,11 @@ Typical Usage Examples:
 >>> array = [1, 2, 3, 4, 5, 6, 7]
 >>> element = 2
 >>> index = binary.search(array, element)
+>>> index
 1
 >>> element = 9
 >>> index = binary.search(array, element)
+>>> index
 -1
 
 Input Parameters:
