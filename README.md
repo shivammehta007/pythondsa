@@ -3,6 +3,7 @@
 <details>
     <summary>Searching</summary>
  
- - [Binary](https://github.com/shivammehta007/pythondsa/blob/master/search/binary.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/search/pylint_score/binarypy_pylint.out)
+ -  [Binary](https://github.com/shivammehta007/pythondsa/blob/master/search/binary.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/search/pylint_score/binarypy_pylint.out)
+ -  [Linear](https://github.com/shivammehta007/pythondsa/blob/master/search/linear.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/search/pylint_score/linearpy_pylint.out)
  
  </details>
