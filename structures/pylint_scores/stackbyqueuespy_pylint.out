@@ -1,0 +1,6 @@
+************* Module pythondsa.structures.stack_by_queues
+stack_by_queues.py:77:4: C0103: Constant name "s" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.72/10 (previous run: 9.72/10, +0.00)
+
