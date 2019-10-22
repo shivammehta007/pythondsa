@@ -1,0 +1,6 @@
+************* Module queue_by_stack
+queue_by_stack.py:77:4: C0103: Constant name "q" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.63/10 (previous run: 9.63/10, +0.00)
+
