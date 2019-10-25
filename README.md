@@ -17,3 +17,11 @@
  -  [Linear](https://github.com/shivammehta007/pythondsa/blob/master/search/linear.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/search/pylint_score/linearpy_pylint.out)
  
  </details>
+
+<details>
+    <summary>Sorting</summary>
+ 
+ -  [Selection](https://github.com/shivammehta007/pythondsa/blob/master/sort/selection.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/selection_sort_pylint.out)
+ -  [Insertion](https://github.com/shivammehta007/pythondsa/blob/master/sort/insertion.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/insertion_sort_pylint.out)
+ 
+ </details>
