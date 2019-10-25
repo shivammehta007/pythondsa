@@ -1,5 +1,5 @@
- # pythondsa 
- ### Implementation of Most known Data Structures and algorithms Algorithms:
+ # Pythondsa 
+ ### Implementation of Most known Data Structures and Algorithms:
  
  <details>
     <summary>Data Structures</summary>
