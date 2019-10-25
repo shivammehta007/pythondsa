@@ -1,0 +1,7 @@
+************* Module pythondsa.sort.insertion
+insertion.py:31:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
+insertion.py:18:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 8.46/10 (previous run: 8.46/10, +0.00)
+
