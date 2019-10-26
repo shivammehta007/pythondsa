@@ -5,13 +5,13 @@ Insertion Sort
 For every iteration i it swap the a[i] with each large entity on its left
 
 Complexity:
-    Best Case: O(n^2)
-    Average Case: O(n^2)
+    Best Case: O(n)
+    Average Case: O(n)
     Worst Case: O(n^2)
 
-Since it will be iterating through all the elements two times irrespective of
-its order
-
+When the array will be ordered, the insertion sort will just revalidate it with only one iteration.
+Worst case: if array is descending order it makes 1/2 N^2 compares and 1/2 N^2 exchanges
+Average Case: For partially sorted array with inversions less than < cN, it runsi n linear time the number of exchanges are equal to number of inversions.
 """
 
 
