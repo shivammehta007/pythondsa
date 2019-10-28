@@ -1,0 +1,10 @@
+************* Module pythondsa.structures.linkedlists
+linkedlists.py:16:4: R0903: Too few public methods (0/2) (too-few-public-methods)
+linkedlists.py:39:4: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+linkedlists.py:48:4: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+linkedlists.py:68:4: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+linkedlists.py:157:4: C0103: Constant name "linked_lst" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.60/10 (previous run: 9.60/10, +0.00)
+
