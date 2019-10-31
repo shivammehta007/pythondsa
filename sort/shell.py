@@ -4,7 +4,10 @@ Shell Sorting Algorithm uses h-window size to skim through the array and sort
 then it reduces the window size in some order and then again sort the array
 with elements on its index unless it reaches 1 where it acts as an insertion
 sort.
-Time Complexity: 
+Time Complexity:
+    Best: O(n log n)
+    Average: O(n (log n)^2 )
+    Worst: O (n (log n)^2 )
     No One can calculate it since for every different array it takes different
     number of comparisons to do it but it looks like its O(n^{3/2}) but it is
     not it is relatively way much faster somewhere between O(nlog_3n).
