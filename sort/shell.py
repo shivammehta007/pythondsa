@@ -9,22 +9,31 @@ sort
 
 
 class Shell:
-
-    def sort(self, array):
+    """
+    Shell Sort class implementation use sort method to sort and return array
+    """
+    @staticmethod
+    def sort(array):
+        """
+        Sorts the input unsorted array and returns the sorted array
+        Input: array -> list of integers
+        Output: array -> list of sorted integers
+        """
         N = len(array)
         h = 1
-        while h < N/3:
+        # Populate the h-size
+        while h < N//3:
             h = 3*h + 1
-        print(N)
+
         while h >= 1:
             i = h
             while i < N:
                 j = i
                 while j >= h:
-                    if array[j] > array[j-h]:
+                    if array[j] < array[j-h]:
                         temp = array[j]
-                        array[j-h] = array[j]
-                        array[j] = temp
+                        array[j] = array[j-h]
+                        array[j-h] = temp
                     j -= h
                 i += 1
 
@@ -33,6 +42,5 @@ class Shell:
 
 
 if __name__ == '__main__':
-    arr = [2, 3, 4, 0, 1, 5]
-    sorter = Shell()
-    print(sorter.sort(arr))
+    ARRAY = [2, 3, 4, 0, 1, 5]
+    assert Shell.sort(ARRAY) == [0, 1, 2, 3, 4, 5]
