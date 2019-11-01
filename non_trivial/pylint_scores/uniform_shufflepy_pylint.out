@@ -1,0 +1,7 @@
+************* Module pythondsa.non_trivial.uniform_shuffle
+uniform_shuffle.py:26:15: W0612: Unused variable 'value' (unused-variable)
+uniform_shuffle.py:13:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 8.67/10 (previous run: 8.00/10, +0.67)
+
