@@ -65,6 +65,22 @@ class LinkedList:
             print(node.value, end=' ')
             node = node.next
 
+    def print_reversed(self, node=None, head=True):
+        """
+        Prints the reversed linked list with the help of recursion
+        """
+        if self.head is None:
+            return
+
+        if head:
+            node = self.head
+
+        if node is None:
+            return
+
+        self.print_reversed(node.next, False)
+        print(node.value, end=' ')
+
     def add(self, x, position):
         """
         Adds the element to a specific location in the linked list
@@ -171,6 +187,8 @@ if __name__ == '__main__':
     print('Adding 3 at index 2')
     linked_lst.add(3, 2)
     linked_lst.print_it()
+    print('\nReversed List: ', end='')
+    linked_lst.print_reversed()
     print(f'\tSize : {len(linked_lst)}')
 
     print('Deleting First')
