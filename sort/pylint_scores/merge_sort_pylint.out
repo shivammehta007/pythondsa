@@ -1,0 +1,11 @@
+************* Module pythondsa.sort.merge
+merge.py:34:8: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+merge.py:34:11: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+merge.py:38:16: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+merge.py:41:16: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+merge.py:57:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
+merge.py:16:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 7.69/10 (previous run: 7.69/10, +0.00)
+
