@@ -69,7 +69,7 @@ class LinkedList:
         """
         Prints the reversed linked list with the help of recursion
         """
-        if self.head is None:
+        if self.size == 0:
             return
 
         if head:
@@ -150,6 +150,7 @@ class LinkedList:
         """
         if self.size == 0:
             print(self.errors['underflow'])
+            return
 
         if self.head.value == value:
             self.delete_first()
@@ -166,6 +167,22 @@ class LinkedList:
                     self.tail = node
                 return
             node = node.next
+
+    def middle_element(self):
+        """
+        Prints the Middle element without counter
+        """
+        if self.size == 0:
+            print(self.errors['underflow'])
+            return
+
+        single_jumper = self.head
+        double_jumper = self.head
+        while double_jumper is not None and double_jumper.next is not None:
+            single_jumper = single_jumper.next
+            double_jumper = double_jumper.next.next
+
+        return single_jumper.value
 
 
 if __name__ == '__main__':
@@ -195,6 +212,7 @@ if __name__ == '__main__':
     linked_lst.delete_first()
     linked_lst.print_it()
     print(f'\t\tSize : {len(linked_lst)}')
+    print(f'Middle_Element : {linked_lst.middle_element()}')
 
     print('Deleting by Position 1')
     linked_lst.delete_by_position(1)
