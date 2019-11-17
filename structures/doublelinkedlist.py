@@ -89,22 +89,41 @@ class DoubleLinkedList:
         if self.length % 2 != 0:
             self.middle = self.middle.prev
 
-    def printfwd(self):
+    def printfwd(self, iterator=None, till=None):
         """
         Uses the next pointer and prints the list in forward manner
+        Parameters:
+        iterator: position of a node in list from where to start
+        till: position of a node in list on where to end
         """
-        iterator = self.head.next
+        if not iterator:
+            iterator = self.head.next
+        else:
+            iterator = iterator.next
+
         while iterator.next:
             print(iterator.x, end=' ')
+            if till:
+                if till.x == iterator.x:
+                    break
             iterator = iterator.next
         print()
 
-    def printbwd(self):
+    def printbwd(self, iterator=None, till=None):
         """
         Uses the prev pointer and prints the list in backward manner
+        Parameters:
+        iterator: position of a node in list from where to start
+        till: position of a node in list on where to end
         """
-        iterator = self.tail.prev
+        if not iterator:
+            iterator = self.tail.prev
+        else:
+            iterator = iterator.prev
         while iterator.prev:
+            if till:
+                if till.x == iterator.x:
+                    break
             print(iterator.x, end=' ')
             iterator = iterator.prev
         print()
@@ -121,9 +140,12 @@ if __name__ == '__main__':
     dll.add(6)
     print(f'Middle: {dll.middle.x}')
     print('Forward Print:')
-    dll.printfwd()
+    dll.printfwd(None, dll.middle)
+    dll.printfwd(dll.middle)
     print('Backward Print:')
     dll.printbwd()
     dll.remove()
     print(f'Middle: {dll.middle.x}')
-    dll.printfwd()
+    dll.printfwd(None, dll.middle)
+    dll.printfwd(dll.middle)
+    dll.printbwd(dll.middle)
