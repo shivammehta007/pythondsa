@@ -5,8 +5,8 @@ Insertion Sort
 For every iteration i it swap the a[i] with each large entity on its left
 
 Complexity:
-    Best Case: O(n)
-    Average Case: O(n)
+    Best Case: Sigma(n)
+    Average Case: Theta(n^2)
     Worst Case: O(n^2)
 
 When the array will be ordered, the insertion sort will just revalidate it with only one iteration.
