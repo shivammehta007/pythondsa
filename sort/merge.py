@@ -6,6 +6,11 @@ Merge sort uses Divide and Conquer technique to divie big problems into small
 ones.We break the array into two parts and keep on breaking until it is single
 element then we merge them based on their place in sorting.
 
+Time Complexity:
+Best: O(nlogn)
+Average: O(nlogn)
+Worst: O(nlogn)
+
 Usage:
 
 >>> Merge.sort([3,2,1,6,4,5])
@@ -15,20 +20,23 @@ Usage:
 
 class Merge:
     """
+    Merge Sort Class
+
     Class to implement merge sorting Technique
-    Time Complexity:
-    Best: O(nlogn)
-    Average: O(nlogn)
-    Worst: O(nlogn)
+    Methods:
+    sort: Sorts the element, has to be called by the user
     """
 
     @staticmethod
     def _merge(left_array, right_array):
         """
         Merges the left array and right array in a sorted manner
-        Input: left_array -> list
-               right_array -> list
-        Output: merged_array -> merged and sorted list
+        Input:
+        left_array -> list
+        right_array -> list
+
+        Output:
+        merged_array -> merged and sorted list
         """
         merged_array = []
         l, r = 0, 0
@@ -51,8 +59,11 @@ class Merge:
     def sort(array):
         """
         Calls the sort operation recusrively until the size of array is 1
-        Input: array -> List
-        Output: array -> Sorted List
+        Input:
+        array -> List
+
+        Output:
+        array -> Sorted List
         """
         N = len(array)
 

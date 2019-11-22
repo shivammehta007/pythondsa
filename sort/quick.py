@@ -1,5 +1,5 @@
 """
-Quick Sort Impementation
+Quick Sort
 
 Quick sort is another of divide and conquer algorithms which recursively divides the array into
 two subarrays but it is done after the work is done, unlike the merge sort where the recusrion takes
@@ -11,6 +11,15 @@ are less than the comparision element and all the elements to the left of the in
 pointers are greater than the element. Then return the partition at this moment the element of that
 partition is at its correct position.
 
+Fun Fact: It is faster than mergesort even though it has 39% more comparisions because of less
+          movement of data, as mergesort has to move data in and out of auxillary array
+
+Time Complexity:
+Best Case: O(nlogn) # case when it divides everything in half
+Average Case: O(nlogn)
+Worse Case: O(n^2) # This the case when array is already sorted therefore
+                     it is recommended to do a random shuffle before sort
+
 Usage Example:
 >>> import Quick
 >>> a = [4, 5, 2, 1]
@@ -18,7 +27,7 @@ Usage Example:
 >>> a
 [1, 2, 4, 5]
 """
-
+import random
 
 class Quick:
     """
@@ -29,12 +38,18 @@ class Quick:
     """
 
     @staticmethod
-    def sort(arr):
+    def sort(arr, uniform_shuffle=True):
         """
         Called by the user and invokes the whole quick sort ecosystem
         input:
         a -> List of Numbers
         """
+        if uniform_shuffle:
+            size = len(arr)
+            for i in range(size-1):
+                j = random.randint(i, size-1)
+                arr[i], arr[j] = arr[j], arr[i]
+
         Quick._quick_sort(arr, 0, len(arr)-1)
 
     @staticmethod
