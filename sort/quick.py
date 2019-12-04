@@ -42,7 +42,8 @@ class Quick:
         """
         Called by the user and invokes the whole quick sort ecosystem
         input:
-        a -> List of Numbers
+        arr -> List of Numbers
+        uniform_shuffle -> Boolean, True invokes uniform shuffle
         """
         if uniform_shuffle:
             size = len(arr)
@@ -58,7 +59,7 @@ class Quick:
         Takes input array its lower pointer and higher pointer and recursively calls iteself
         until the array is sorted
         input:
-        a -> List of Numbers
+        arr -> List of Numbers
         low -> integer starting pointer of this list
         high -> integer ending pointer of this list
         """
@@ -74,7 +75,7 @@ class Quick:
         Partitions the subarray, keeps first element of low as the comparision element and finds
         its correct location into the array.
         input:
-        a -> List of Numbers
+        arr -> List of Numbers
         low -> current integer starting pointer of list
         high -> current integer ending pointer of list
         """
