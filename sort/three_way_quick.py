@@ -100,4 +100,3 @@ if __name__ == '__main__':
         Quick3.sort(a)
         assert a == sorted(b)
     print('Tests Passed Successfully')
-

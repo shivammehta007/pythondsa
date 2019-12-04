@@ -6,5 +6,5 @@ shell.py:48:12: C0103: Variable name "h" doesn't conform to snake_case naming st
 shell.py:19:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 8.00/10 (previous run: 7.73/10, +0.27)
+Your code has been rated at 8.00/10 (previous run: 8.00/10, +0.00)
 
