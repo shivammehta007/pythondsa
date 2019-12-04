@@ -43,7 +43,9 @@ class Selection:
 
 
 if __name__ == '__main__':
-    ARRAY = [[1, 6, 4, 2, 9, 0], [23, 7, 4, 3, 2, 1, 0]]
-    assert [0, 1, 2, 4, 6, 9] == Selection.sort(ARRAY[0])
-    assert [0, 1, 2, 3, 4, 7, 23] == Selection.sort(ARRAY[1])
-    print('Test Passed Successfully')
+    from random import randint
+    for _ in range(5):
+        a = b = [randint(1, 100) for i in range(100)]
+        assert Selection.sort(a) == sorted(b)
+    print('Tests Passed Successfully')
+

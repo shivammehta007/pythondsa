@@ -94,7 +94,10 @@ class Quick3:
         return lesser_p, greater_p
 
 if __name__ == '__main__':
-    A = [23, 54, 76, 12, 12, 12, 11, 4, 12, 90]
-    Quick3.sort(A)
-    assert A == [4, 11, 12, 12, 12, 12, 23, 54, 76, 90]
-    print('Test Passed')
+    from random import randint
+    for _ in range(5):
+        a = b = [randint(1, 100) for i in range(100)]
+        Quick3.sort(a)
+        assert a == sorted(b)
+    print('Tests Passed Successfully')
+

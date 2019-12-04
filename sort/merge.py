@@ -76,6 +76,9 @@ class Merge:
 
 
 if __name__ == '__main__':
-    assert Merge.sort([3, 2, 1, 5, 6, 4]) == [1, 2, 3, 4, 5, 6]
-    assert Merge.sort([56, 23, 89, 10, 45, 11]) == [10, 11, 23, 45, 56, 89]
-    print('Tests ran successfully')
+    from random import randint
+    for _ in range(5):
+        a = b = [randint(1, 100) for i in range(100)]
+        assert Merge.sort(a) == sorted(b)
+    print('Tests Passed Successfully')
+

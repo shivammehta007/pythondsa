@@ -50,5 +50,8 @@ class Shell:
 
 
 if __name__ == '__main__':
-    ARRAY = [2, 3, 4, 0, 1, 5]
-    assert Shell.sort(ARRAY) == [0, 1, 2, 3, 4, 5]
+    from random import randint
+    for _ in range(5):
+        a = b = [randint(1, 100) for i in range(100)]
+        assert Shell.sort(a) == sorted(b)
+    print('Tests Passed Successfully')
