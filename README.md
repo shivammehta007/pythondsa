@@ -27,5 +27,5 @@
  -  [Selection](https://github.com/shivammehta007/pythondsa/blob/master/sort/selection.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/selection_sort_pylint.out)
  -  [Insertion](https://github.com/shivammehta007/pythondsa/blob/master/sort/insertion.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/insertion_sort_pylint.out)
  -  [Quick](https://github.com/shivammehta007/pythondsa/blob/master/sort/quick.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/quick_sort_pylint.out)
- 
+ -  [Three Way Quick/Dijkstra Quick Sort](https://github.com/shivammehta007/pythondsa/blob/master/sort/three_way_quick.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/three_way_quick_sort_pylint.out)
  </details>
