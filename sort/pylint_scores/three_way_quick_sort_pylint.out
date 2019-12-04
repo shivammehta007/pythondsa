@@ -1,6 +1,7 @@
 ************* Module pythondsa.sort.three_way_quick
+three_way_quick.py:103:0: C0305: Trailing newlines (trailing-newlines)
 three_way_quick.py:29:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 9.71/10 (previous run: 9.71/10, +0.00)
+Your code has been rated at 9.44/10 (previous run: 9.71/10, -0.26)
 
