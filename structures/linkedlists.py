@@ -1,8 +1,21 @@
-#!/bin/usr/env python3
 """
-Implementation of liked lists in python3
+Implementation of liked lists in python
 
-TODO: Add Docstrings
+One of the fundamental data structure link list has an advantage to put values
+at the end and begining of the list in constant time complexity and linear at
+other places. Same it can delete from first and end in constant time as well.
+
+Example Usage:
+``
+    >>>linked_lst = LinkedList(2)
+    >>>linked_lst.add_first(1)
+    >>>linked_lst.add_last(4)
+    >>>linked_lst.print_it()
+    Array :  1 2 4
+    >>>linked_lst.add(3, 2)
+    >>>linked_lst.print_it()
+    Array :  1 2 4 3
+``
 """
 
 
