@@ -13,6 +13,11 @@ Time Complexity:
     not it is relatively way much faster somewhere between O(nlog_3n).
     Since its very light and fast it is used in various embedding systems
 
+Example Usage:
+``
+    >>>Shell.sort([3, 2, 1, 4])
+    [1, 2, 3, 4]
+``
 """
 
 

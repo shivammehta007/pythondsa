@@ -11,10 +11,11 @@ Best: O(nlogn)
 Average: O(nlogn)
 Worst: O(nlogn)
 
-Usage:
-
->>> Merge.sort([3,2,1,6,4,5])
-[1,2,3,4,5,6]
+Example Usage:
+``
+    >>> Merge.sort([3,2,1,6,4,5])
+    [1,2,3,4,5,6]
+``
 """
 
 

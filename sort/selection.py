@@ -15,6 +15,12 @@ Complexity:
 
 Even if array is sorted, the whole array is traversed hence again O(n^2)
 
+Example Usage:
+``
+    >>>Selection.sort([1, 5, 2, 9])
+    [1, 2, 5, 9]
+``
+
 """
 
 

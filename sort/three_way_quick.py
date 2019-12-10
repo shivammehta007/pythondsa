@@ -17,12 +17,14 @@ Average Case: O(nlogn)
 Worse Case: O(n^2) # This the case when array is already sorted therefore
                      it is recommended to do a random shuffle before sort
 
-Usage Example:
->>> import Quick3
->>> a = [4, 5, 2, 1]
->>> Quick3.sort(a)
->>> a
-[1, 2, 4, 5]
+Example Usage:
+``
+    >>> import Quick3
+    >>> a = [4, 5, 2, 1]
+    >>> Quick3.sort(a)
+    >>> a
+    [1, 2, 4, 5]
+``
 """
 import random
 

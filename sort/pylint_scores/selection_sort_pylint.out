@@ -1,7 +1,7 @@
 ************* Module pythondsa.sort.selection
-selection.py:51:0: C0305: Trailing newlines (trailing-newlines)
-selection.py:34:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
-selection.py:21:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+selection.py:57:0: C0305: Trailing newlines (trailing-newlines)
+selection.py:40:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
+selection.py:27:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
 Your code has been rated at 8.12/10 (previous run: 8.12/10, +0.00)
