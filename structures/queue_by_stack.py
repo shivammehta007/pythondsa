@@ -8,22 +8,23 @@ We always push into the first one and pop from second one
 and if second stack is empty we first pop all from first
 and transfer to second then pop from second
 
-Usage Example:
-
->>> q = Queue()
->>> q.enque(1)
->>> q.enque(2)
->>> q.enque(3)
->>> q.deque()
-1
->>> q.deque()
-2
->>> q.deque()
-3
->>> len(q)
-0
->>> q.deque()
-'Error'
+Example Usage:
+``
+    >>> q = Queue()
+    >>> q.enque(1)
+    >>> q.enque(2)
+    >>> q.enque(3)
+    >>> q.deque()
+    1
+    >>> q.deque()
+    2
+    >>> q.deque()
+    3
+    >>> len(q)
+    0
+    >>> q.deque()
+    'Error'
+``
 
 Complexity:
 Insertion : O(1)
