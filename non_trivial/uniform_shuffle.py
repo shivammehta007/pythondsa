@@ -6,6 +6,12 @@ Shuffles the numbers in a uniform way, almost guarenteeing that the shuffle
 will be random.
 For every iteration it generates random number from 0 to index-1 and swaps the
 current element from it.
+
+Example Usage:
+``
+    >>>UniformShuffle.shuffle(ARRAY)
+    [5, 3, 4, 0, 1, 2]
+``
 """
 import random
 

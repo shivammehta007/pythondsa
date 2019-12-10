@@ -10,23 +10,25 @@ until found linearly, hence the name Linear Search
     Average Case: O(n)
     Worst Case: O(n)
 
-Typical Usage Examples:
-
->>> from pythondsa.search import Linear
->>> linear = Linear()
->>> array = [1,2,3,4,5]
->>> element = 2
->>> index = Linear.search(array, element)
->>> index
-1
->>> element = 7
->>> index = Linear.search(array, element)
->>> index
--1
-
 Methods:
     seach: array --> input array type list
            element --> elements to be searched for
+
+
+Example Usage:
+``
+    >>> from pythondsa.search import Linear
+    >>> linear = Linear()
+    >>> array = [1,2,3,4,5]
+    >>> element = 2
+    >>> index = Linear.search(array, element)
+    >>> index
+    1
+    >>> element = 7
+    >>> index = Linear.search(array, element)
+    >>> index
+    -1
+``
 """
 
 

@@ -13,20 +13,6 @@ the middle element is lesser or greater than the searching element
 
 It can be implemented in two ways recursively and without recursively
 
-Typical Usage Examples:
-
->>> from pythondsa.search import Binary
->>> binary = Binary(recursion=True)
->>> array = [1, 2, 3, 4, 5, 6, 7]
->>> element = 2
->>> index = binary.search(array, element)
->>> index
-1
->>> element = 9
->>> index = binary.search(array, element)
->>> index
--1
-
 Input Parameters:
     recursion: True or False to use recursion or not
 
@@ -34,6 +20,20 @@ Methods:
     search: array -> input array type list
             element: # element to be searched for
 
+Example Usage:
+``
+    >>> from pythondsa.search import Binary
+    >>> binary = Binary(recursion=True)
+    >>> array = [1, 2, 3, 4, 5, 6, 7]
+    >>> element = 2
+    >>> index = binary.search(array, element)
+    >>> index
+    1
+    >>> element = 9
+    >>> index = binary.search(array, element)
+    >>> index
+    -1
+``
 """
 
 

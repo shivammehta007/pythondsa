@@ -1,11 +1,11 @@
 ************* Module pythondsa.sort.merge
-merge.py:84:0: C0305: Trailing newlines (trailing-newlines)
-merge.py:42:8: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
-merge.py:42:11: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
-merge.py:46:16: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
-merge.py:49:16: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
-merge.py:68:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
-merge.py:21:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+merge.py:85:0: C0305: Trailing newlines (trailing-newlines)
+merge.py:43:8: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+merge.py:43:11: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+merge.py:47:16: C0103: Variable name "l" doesn't conform to snake_case naming style (invalid-name)
+merge.py:50:16: C0103: Variable name "r" doesn't conform to snake_case naming style (invalid-name)
+merge.py:69:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
+merge.py:22:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
 Your code has been rated at 7.50/10 (previous run: 7.50/10, +0.00)

@@ -1,0 +1,10 @@
+************* Module pythondsa.structures.priority_queue
+priority_queue.py:59:8: C0103: Attribute name "_N" doesn't conform to snake_case naming style (invalid-name)
+priority_queue.py:60:8: C0103: Attribute name "q" doesn't conform to snake_case naming style (invalid-name)
+priority_queue.py:62:4: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+priority_queue.py:118:4: C0103: Constant name "min_pq" doesn't conform to UPPER_CASE naming style (invalid-name)
+priority_queue.py:129:4: C0103: Constant name "max_pq" doesn't conform to UPPER_CASE naming style (invalid-name)
+
+------------------------------------------------------------------
+Your code has been rated at 9.21/10 (previous run: 9.21/10, +0.00)
+

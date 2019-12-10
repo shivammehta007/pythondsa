@@ -8,7 +8,7 @@
  -  [Stack by Queues](https://github.com/shivammehta007/pythondsa/blob/master/structures/stack_by_queues.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/stackbyqueuespy_pylint.out)
  -  [Linked List](https://github.com/shivammehta007/pythondsa/blob/master/structures/linkedlists.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/linkedlistspy_pylint.out)
  -  [Doubly Linked List](https://github.com/shivammehta007/pythondsa/blob/master/structures/doublelinkedlist.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/doublelinkedlist_pylint.out)
- 
+ - [Priority Queues](https://github.com/shivammehta007/pythondsa/blob/development/structures/priority_queue.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/development/structures/pylint_scores/priority_queuespy_pylint.out)
  
  </details>
 

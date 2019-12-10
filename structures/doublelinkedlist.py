@@ -4,24 +4,35 @@ Double Linked List
 It is a collection of linked nodes where every node has two pointers one for its previous
 and one for its backwards.Adds elemement and removes at O(1)
 
-Usage:
-dll = DoubleLinkedList()
-dll.add(1)
-dll.add(2)
-dll.add(3)
-dll.printfwd()
-print(f'Middle: {dll.middle.x}')
-dll.add(4)
-dll.add(5)
-dll.add(6)
-print(f'Middle: {dll.middle.x}')
-print('Forward Print:')
-dll.printfwd()
-print('Backward Print:')
-dll.printbwd()
-dll.remove()
-print(f'Middle: {dll.middle.x}')
-dll.printfwd()
+Example Usage:
+``
+	>>>dll = DoubleLinkedList()
+	>>>dll.add(1)
+	>>>dll.add(2)
+	>>>dll.add(3)
+	>>>dll.printfwd()
+	1 2 3
+	>>>print(f'Middle: {dll.middle.x}')
+	Middle: 2
+	>>>dll.add(4)
+	>>>dll.add(5)
+	>>>dll.add(6)
+	>>>print(f'Middle: {dll.middle.x}')
+	Middle: 3
+	>>>print('Forward Print:')
+	Forward Print:
+	>>>dll.printfwd()
+	1 2 3
+	>>>print('Backward Print:')
+	Backward Print:
+	>>>dll.printbwd()
+	4 5 6
+	>>>dll.remove()
+	>>>print(f'Middle: {dll.middle.x}')
+	Middle: 2
+	>>>dll.printfwd()
+	1 2 3 4 5
+``
 """
 class DoubleLinkedList:
     """
@@ -146,6 +157,7 @@ if __name__ == '__main__':
     dll.printbwd()
     dll.remove()
     print(f'Middle: {dll.middle.x}')
+    dll.printfwd()
     dll.printfwd(None, dll.middle)
     dll.printfwd(dll.middle)
     dll.printbwd(dll.middle)

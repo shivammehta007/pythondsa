@@ -7,17 +7,18 @@ is done while pushing the element, if queue1 is empty
 simply push in queue2 otherwise switch all the entities
 and then push to queue 2 and empty queue 1
 
-Usage Examples:
-
->>> s = Stack()
->>> s.push(5)
->>> s.push(4)
->>> s.pop()
-4
->>> s.pop()
-5
->>> s.pop()
-'Error'
+Example Usage:
+``
+    >>> s = Stack()
+    >>> s.push(5)
+    >>> s.push(4)
+    >>> s.pop()
+    4
+    >>> s.pop()
+    5
+    >>> s.pop()
+    'Error'
+``
 
 Complexity:
     Push: O(N)

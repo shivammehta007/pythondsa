@@ -1,7 +1,7 @@
 ************* Module pythondsa.sort.insertion
 insertion.py:14:0: C0301: Line too long (154/100) (line-too-long)
-insertion.py:30:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
-insertion.py:17:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+insertion.py:37:8: C0103: Variable name "N" doesn't conform to snake_case naming style (invalid-name)
+insertion.py:24:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
 Your code has been rated at 7.86/10 (previous run: 7.86/10, +0.00)

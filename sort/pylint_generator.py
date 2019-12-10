@@ -1,3 +1,9 @@
+"""
+PyLint Generator
+
+This is a utility to automatically generate the pylint scores of 
+all files present in this folder.
+"""
 import os
 import glob
 

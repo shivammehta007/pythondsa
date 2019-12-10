@@ -12,6 +12,13 @@ Complexity:
 When the array will be ordered, the insertion sort will just revalidate it with only one iteration.
 Worst case: if array is descending order it makes 1/2 N^2 compares and 1/2 N^2 exchanges
 Average Case: For partially sorted array with inversions less than < cN, it runsi n linear time the number of exchanges are equal to number of inversions.
+
+
+Example Usage:
+``
+    >>>Insertion.sort([3, 2, 1, 4])
+    [1, 2, 3, 4]
+``
 """
 
 class Insertion:
