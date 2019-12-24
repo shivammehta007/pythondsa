@@ -9,6 +9,7 @@
  -  [Linked List](https://github.com/shivammehta007/pythondsa/blob/master/structures/linkedlists.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/linkedlistspy_pylint.out)
  -  [Doubly Linked List](https://github.com/shivammehta007/pythondsa/blob/master/structures/doublelinkedlist.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/doublelinkedlist_pylint.out)
  - [Priority Queues](https://github.com/shivammehta007/pythondsa/blob/development/structures/priority_queue.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/development/structures/pylint_scores/priority_queuespy_pylint.out)
+  - [Trie](https://github.com/shivammehta007/pythondsa/blob/master/structures/trie.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/triepy_pylint.out)
  
  </details>
 
