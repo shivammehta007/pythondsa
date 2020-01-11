@@ -1,0 +1,9 @@
+************* Module pythondsa.sort.counting
+counting.py:41:12: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+counting.py:45:15: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+counting.py:48:20: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+counting.py:23:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 7.78/10 (previous run: 7.78/10, +0.00)
+
