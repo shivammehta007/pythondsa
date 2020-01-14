@@ -1,0 +1,6 @@
+************* Module pythondsa.sort.bucket
+bucket.py:15:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+
+------------------------------------------------------------------
+Your code has been rated at 9.58/10 (previous run: 9.58/10, +0.00)
+

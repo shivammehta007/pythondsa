@@ -5,6 +5,7 @@ It is an linear time sorting algorithm which can be used when the number of
 unique elements in the array is small, as it takes arbitary space.
 How it works is that It takes an array and just count number of occurancies
 of all the elements and put it back in a sequential manner
+It is faster than comparison based algorithms when the M is small
 
 Time Complexity: O(N + M)
 
