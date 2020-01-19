@@ -30,5 +30,7 @@
  -  [Quick](https://github.com/shivammehta007/pythondsa/blob/master/sort/quick.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/quick_sort_pylint.out)
  -  [Three Way Quick/Dijkstra Quick Sort](https://github.com/shivammehta007/pythondsa/blob/master/sort/three_way_quick.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/three_way_quick_sort_pylint.out)
  -  [Counting](https://github.com/shivammehta007/pythondsa/blob/master/sort/counting.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/counting_sort_pylint.out)
+ -  [Radix](https://github.com/shivammehta007/pythondsa/blob/master/sort/radix.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/radix_sort_pylint.out)
+
  </details>
 
