@@ -34,7 +34,7 @@ class Heap:
     def __init__(self, heap=None):
         if heap:
             self._heap = heap
-            self.heapify(0)
+            self.heapify()
         else:
             self._heap = []
 
@@ -155,12 +155,13 @@ class Heap:
 
         return -1
 
-    def heapify(self, p=0):
+    def heapify(self):
         """
         Heapify nodes
         """
-        #TODO: Add Heapify
-        pass
+        start = self._parent(len(self._heap) - 1)
+        for p in range(start, -1, -1):
+            self._downheap(p)
 
 
 if __name__ == '__main__':
@@ -180,4 +181,6 @@ if __name__ == '__main__':
     assert HEAP.peek() == 1
     assert HEAP.search(6) == 3
     assert HEAP.search(99) == -1
+    HEAP2 = Heap([5,4,2,3,7,8,6,1])
+    assert str(HEAP2) == '[1, 3, 2, 4, 7, 8, 6, 5]'
     print('Basic Tests Passed Successfully')
