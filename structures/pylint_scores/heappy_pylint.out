@@ -1,25 +1,4 @@
 ************* Module pythondsa.structures.heap
-heap.py:184:19: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                   ^ (bad-whitespace)
-heap.py:184:21: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                     ^ (bad-whitespace)
-heap.py:184:23: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                       ^ (bad-whitespace)
-heap.py:184:25: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                         ^ (bad-whitespace)
-heap.py:184:27: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                           ^ (bad-whitespace)
-heap.py:184:29: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                             ^ (bad-whitespace)
-heap.py:184:31: C0326: Exactly one space required after comma
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
-                               ^ (bad-whitespace)
 heap.py:43:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
 heap.py:43:4: R0201: Method could be a function (no-self-use)
 heap.py:47:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
@@ -33,8 +12,8 @@ heap.py:80:4: C0103: Argument name "p" doesn't conform to snake_case naming styl
 heap.py:108:4: C0103: Argument name "a" doesn't conform to snake_case naming style (invalid-name)
 heap.py:133:4: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
 heap.py:133:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
-heap.py:163:12: C0103: Variable name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:166:12: C0103: Variable name "p" doesn't conform to snake_case naming style (invalid-name)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.64/10 (previous run: 8.12/10, -0.48)
+Your code has been rated at 8.43/10 (previous run: 8.20/10, +0.22)
 

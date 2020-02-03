@@ -116,7 +116,7 @@ class Heap:
         """
         Deletes the root element of the heap i.e the minimum value
         """
-        if len(self._heap) == 0:
+        if not self._heap:
             raise IndexError("The Heap is empty! Cannot delete an empty heap")
 
         self._swap(0, len(self._heap) -1)
@@ -126,7 +126,7 @@ class Heap:
 
     def peek(self):
         """Returns the minimum value of the heap but does not deletes it"""
-        if len(self._heap) == 0:
+        if not self._heap:
             raise IndexError("The heap is empty! cannot peak an empty heap")
         return self._heap[0]
 
@@ -159,7 +159,7 @@ class Heap:
         """
         Heapify nodes
         This runs in O(n) amortized as the last nodes don't need
-        heapify. For more math look at: 
+        heapify. For more math look at:
         http://www.cs.umd.edu/~meesh/351/mount/lectures/lect14-heapsort-analysis-part.pdf
         """
         start = self._parent(len(self._heap) - 1)
@@ -184,6 +184,6 @@ if __name__ == '__main__':
     assert HEAP.peek() == 1
     assert HEAP.search(6) == 3
     assert HEAP.search(99) == -1
-    HEAP2 = Heap([5,4,2,3,7,8,6,1])
+    HEAP2 = Heap([5, 4, 2, 3, 7, 8, 6, 1])
     assert str(HEAP2) == '[1, 3, 2, 4, 7, 8, 6, 5]'
     print('Basic Tests Passed Successfully')
