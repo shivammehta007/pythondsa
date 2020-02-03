@@ -86,10 +86,7 @@ class Heap:
             if self._heap[p] > self._heap[small_child]:
                 self._swap(p, small_child)
                 self._downheap(small_child)
-
-    def _heapify(self):
-        pass
-
+        
 
     # Overloading class methods
     def __len__(self):
@@ -97,7 +94,7 @@ class Heap:
 
 
     def __str__(self):
-        return ' '.join(map(str, self._heap))
+        return str(self._heap)
 
 
     # Heap Operations
@@ -133,14 +130,24 @@ class Heap:
         if self._has_left_child(p):
             if x == self._heap[self._left_child(p)]:
                 return self._left_child(p)
-            self.search(self._left_child(p))
+
+            search_value = self.search(x, self._left_child(p))
+            if search_value >= 0:
+                return search_value
+
             if self._has_right_child(p):
+
                 if x == self._heap[self._right_child(p)]:
                     return self._left_child(p)
-                self.search(self._right_child(p))
+                search_value = self.search(x, self._right_child(p))
+                if search_value >= 0:
+                    return search_value
 
         return -1
-            
+
+    def heapify(self, p=0):
+        #TODO: Add Heapify
+        pass
             
 
 
@@ -154,11 +161,11 @@ if __name__ == '__main__':
     heap.insert(6)
     heap.insert(3)
     heap.insert(0)
-    assert str(heap) == '0 0 3 1 5 7 6 2'
+    assert str(heap) == '[0, 0, 3, 1, 5, 7, 6, 2]'
     assert heap.delete_min() == 0
     assert heap.delete_min() == 0
-    assert str(heap) == '1 2 3 6 5 7'
+    assert str(heap) == '[1, 2, 3, 6, 5, 7]'
     assert heap.peek() == 1
+    assert heap.search(6) == 3
+    assert heap.search(99) == -1
     print('Basic Tests Passed Successfully')
-    print(heap)
-    print(heap.search(6))
