@@ -158,6 +158,9 @@ class Heap:
     def heapify(self):
         """
         Heapify nodes
+        This runs in O(n) amortized as the last nodes don't need
+        heapify. For more math look at: 
+        http://www.cs.umd.edu/~meesh/351/mount/lectures/lect14-heapsort-analysis-part.pdf
         """
         start = self._parent(len(self._heap) - 1)
         for p in range(start, -1, -1):
