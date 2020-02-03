@@ -2,7 +2,7 @@
 Heap
 
 Heap is the kind of datastructure where a heap order property is maintained
-that is in Heap T for every element position p the value of p should be 
+that is in Heap T for every element position p the value of p should be
 greater than the parent of p.
 In a complete binary heap a complete binary tree property is maintained and
 the height of the tree is log n.
@@ -25,11 +25,16 @@ Peek: O(1)
 """
 
 class Heap:
+    """
+    Heap Data Structure
 
-    def __init__(self, heap=[]):
+    For a node p its left child is at 2p + 1 and right child is at 2p+2
+    """
+
+    def __init__(self, heap=None):
         if heap:
             self._heap = heap
-            self._heapify(0)
+            self.heapify(0)
         else:
             self._heap = []
 
@@ -81,12 +86,13 @@ class Heap:
             small_child = self._left_child(p)
 
             if self._has_right_child(p):
-                small_child = self._right_child(p) if self._heap[self._right_child(p)] < self._heap[self._left_child(p)] else small_child
+                small_child = self._right_child(p) if self._heap[self._right_child(p)] \
+                < self._heap[self._left_child(p)] else small_child
 
             if self._heap[p] > self._heap[small_child]:
                 self._swap(p, small_child)
                 self._downheap(small_child)
-        
+
 
     # Overloading class methods
     def __len__(self):
@@ -110,7 +116,7 @@ class Heap:
         """
         Deletes the root element of the heap i.e the minimum value
         """
-        if len(self._heap) ==  0:
+        if len(self._heap) == 0:
             raise IndexError("The Heap is empty! Cannot delete an empty heap")
 
         self._swap(0, len(self._heap) -1)
@@ -123,8 +129,12 @@ class Heap:
         if len(self._heap) == 0:
             raise IndexError("The heap is empty! cannot peak an empty heap")
         return self._heap[0]
-        
+
     def search(self, x, p=0):
+        """
+        Searches for an element in the Heap returns its index
+        returns -1 if the element is not found
+        """
         if self._heap[p] == x:
             return p
         if self._has_left_child(p):
@@ -146,26 +156,28 @@ class Heap:
         return -1
 
     def heapify(self, p=0):
+        """
+        Heapify nodes
+        """
         #TODO: Add Heapify
         pass
-            
 
 
 if __name__ == '__main__':
-    heap = Heap()
-    heap.insert(0)
-    heap.insert(2)
-    heap.insert(7)
-    heap.insert(1)
-    heap.insert(5)
-    heap.insert(6)
-    heap.insert(3)
-    heap.insert(0)
-    assert str(heap) == '[0, 0, 3, 1, 5, 7, 6, 2]'
-    assert heap.delete_min() == 0
-    assert heap.delete_min() == 0
-    assert str(heap) == '[1, 2, 3, 6, 5, 7]'
-    assert heap.peek() == 1
-    assert heap.search(6) == 3
-    assert heap.search(99) == -1
+    HEAP = Heap()
+    HEAP.insert(0)
+    HEAP.insert(2)
+    HEAP.insert(7)
+    HEAP.insert(1)
+    HEAP.insert(5)
+    HEAP.insert(6)
+    HEAP.insert(3)
+    HEAP.insert(0)
+    assert str(HEAP) == '[0, 0, 3, 1, 5, 7, 6, 2]'
+    assert HEAP.delete_min() == 0
+    assert HEAP.delete_min() == 0
+    assert str(HEAP) == '[1, 2, 3, 6, 5, 7]'
+    assert HEAP.peek() == 1
+    assert HEAP.search(6) == 3
+    assert HEAP.search(99) == -1
     print('Basic Tests Passed Successfully')

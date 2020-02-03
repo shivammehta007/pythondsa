@@ -1,0 +1,21 @@
+************* Module pythondsa.structures.heap
+heap.py:162:1: W0511: TODO: Add Heapify (fixme)
+heap.py:43:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:43:4: R0201: Method could be a function (no-self-use)
+heap.py:47:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:47:4: R0201: Method could be a function (no-self-use)
+heap.py:51:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:51:4: R0201: Method could be a function (no-self-use)
+heap.py:55:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:59:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:67:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:80:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:108:4: C0103: Argument name "a" doesn't conform to snake_case naming style (invalid-name)
+heap.py:133:4: C0103: Argument name "x" doesn't conform to snake_case naming style (invalid-name)
+heap.py:133:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:158:4: C0103: Argument name "p" doesn't conform to snake_case naming style (invalid-name)
+heap.py:163:8: W0107: Unnecessary pass statement (unnecessary-pass)
+
+------------------------------------------------------------------
+Your code has been rated at 8.12/10 (previous run: 8.12/10, +0.00)
+
