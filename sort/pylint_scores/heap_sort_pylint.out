@@ -1,0 +1,11 @@
+************* Module pythondsa.sort.heap
+heap.py:37:4: R0201: Method could be a function (no-self-use)
+heap.py:41:4: R0201: Method could be a function (no-self-use)
+heap.py:45:4: R0201: Method could be a function (no-self-use)
+heap.py:49:4: R0201: Method could be a function (no-self-use)
+heap.py:53:4: R0201: Method could be a function (no-self-use)
+heap.py:57:4: R0201: Method could be a function (no-self-use)
+
+------------------------------------------------------------------
+Your code has been rated at 8.54/10 (previous run: 8.29/10, +0.24)
+

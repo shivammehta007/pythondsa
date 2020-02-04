@@ -21,13 +21,13 @@ Worse Case: O(n^2) # This the case when array is already sorted therefore
                      it is recommended to do a random shuffle before sort
 
 Example Usage:
-``
+```
     >>> import Quick
     >>> a = [4, 5, 2, 1]
     >>> Quick.sort(a)
     >>> a
     [1, 2, 4, 5]
-``
+```
 """
 import random
 
