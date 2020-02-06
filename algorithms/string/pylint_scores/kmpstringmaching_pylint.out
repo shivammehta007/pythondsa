@@ -1,0 +1,11 @@
+************* Module pythondsa.algorithms.string.kmpstringmatching
+kmpstringmatching.py:36:32: W0621: Redefining name 'substring' from outer scope (line 101) (redefined-outer-name)
+kmpstringmatching.py:44:8: W0621: Redefining name 'i' from outer scope (line 99) (redefined-outer-name)
+kmpstringmatching.py:46:12: R1724: Unnecessary "elif" after "continue" (no-else-continue)
+kmpstringmatching.py:61:15: W0621: Redefining name 'string' from outer scope (line 100) (redefined-outer-name)
+kmpstringmatching.py:61:23: W0621: Redefining name 'substring' from outer scope (line 101) (redefined-outer-name)
+kmpstringmatching.py:71:8: W0621: Redefining name 'i' from outer scope (line 99) (redefined-outer-name)
+
+------------------------------------------------------------------
+Your code has been rated at 8.60/10 (previous run: 8.60/10, +0.00)
+
