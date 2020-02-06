@@ -1,1 +1,1 @@
-from string import *
+from string.kmpstringmatching import KMP
