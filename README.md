@@ -26,3 +26,9 @@
  -  [Counting](https://github.com/shivammehta007/pythondsa/blob/master/sort/counting.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/counting_sort_pylint.out)
  -  [Radix](https://github.com/shivammehta007/pythondsa/blob/master/sort/radix.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/radix_sort_pylint.out)
  -  [Heap]( https://github.com/shivammehta007/pythondsa/blob/master/sort/heap.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/sort/pylint_scores/heap_sort_pylint.out)
+ 
+ ## String
+
+ -  [KMP Searching](https://github.com/shivammehta007/pythondsa/blob/master/algorithms/string/kmpstringmatching.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/algorithms/string/pylint_scores/kmpstringmaching_pylint.out)
+ 
+ 
