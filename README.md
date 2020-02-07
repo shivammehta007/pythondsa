@@ -30,5 +30,6 @@
  ## String
 
  -  [KMP Searching](https://github.com/shivammehta007/pythondsa/blob/master/algorithms/string/kmpstringmatching.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/algorithms/string/pylint_scores/kmpstringmaching_pylint.out)
+ -  [Rabin-Karp Searching](https://github.com/shivammehta007/pythondsa/blob/master/algorithms/string/rabin_karp_stringmatching.py) : [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/algorithms/string/pylint_scores/rabin_karp_stringmatchingpy_pylint.out)
  
  
