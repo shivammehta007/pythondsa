@@ -1,0 +1,9 @@
+************* Module pythondsa.algorithms.string.rabin_karp_stringmatching
+rabin_karp_stringmatching.py:42:28: W0621: Redefining name 'string' from outer scope (line 98) (redefined-outer-name)
+rabin_karp_stringmatching.py:47:15: W0621: Redefining name 'string' from outer scope (line 98) (redefined-outer-name)
+rabin_karp_stringmatching.py:65:12: W0621: Redefining name 'i' from outer scope (line 97) (redefined-outer-name)
+rabin_karp_stringmatching.py:47:4: C0103: Argument name "d" doesn't conform to snake_case naming style (invalid-name)
+
+-----------------------------------
+Your code has been rated at 8.86/10
+
