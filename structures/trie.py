@@ -5,7 +5,12 @@ Trie is a datastructure used to store strings for prefix matches or spell check
 In trie every node has a hashmap of key of characters and value of reference to
 another node.
 Time Complexity:
-Insertion of lexicon: O(l*n)
+Insertion of lexicon: O(l*n) -> l is length of key and n is number of words
+Searching/Insertion: O(l) -> l is length of key
+
+Space Complexity: O(z*l*n) -> z is alphabet length, l is length of key,
+                    n is number of words
+
 """
 
 
