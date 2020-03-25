@@ -70,7 +70,6 @@ class Heap:
         insertion
         """
         parent = self._parent(p)
-        # print('Element {} and Parent: {}'.format(self._heap[p], self._heap[parent]))
 
         if p > 0 and self._heap[parent] > self._heap[p]:
 
