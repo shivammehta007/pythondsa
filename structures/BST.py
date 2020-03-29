@@ -29,28 +29,57 @@ class Node:
         self.right = None
         self.left = None
 
+    def __str__(self):
+        return "{}, {}".format(self.key, self.value)
+
 
 
 class BST:
     """
     Main BST implementation, will contains methods like insert, delete,
     search etc.
+
+    Supported Methods:
+    insert: inserts the key, value into the Binary Search Tree
+    floor: Gets the floor value of the key into the Binary Search Tree
+    delete: Delete the value from the binary search tree
     """
 
     def __init__(self):
         self.root = None
 
 
+    def _floor(self, key, node):
+        if not node:
+            return
+        elif node.key > key:
+            return self._floor(key, node.left)
+
+        right_node = self._floor(key, node.right)
+        if right_node:
+            return right_node
+        else:
+            return node
+
+        
+    def floor(self, key):
+        """Gets the floor value of the key"""
+
+        node =  self._floor(key, self.root)
+        if not node:
+            return False, -1, 1
+        return node
+        
     def _insert(self, node, key, value):
         """
         Helper insert method to make recursive calls for insertion in BST
         """
         if not node:
             return Node(key, value)
-        elif node.key < key:
-            root.left =  self._insert(node.left, key, value)
         elif node.key > key:
-            root.right = self._insert(node.right, key, value)
+            node.left =  self._insert(node.left, key, value)
+        elif node.key < key:
+            node.right = self._insert(node.right, key, value)
         else:
             node.value = value
         return node
@@ -59,23 +88,55 @@ class BST:
     def insert(self, key, value=None):
         """ Method to insert the key, value into BST """
         self.root = self._insert(self.root, key, value)
-        
 
-    def search(self, key, root=None):
+
+    def _search(self, key, node):
+        """Helper Search function that recursively searches for element"""
+        if not node:
+            return False, -1, -1
+
+        if key == node.key:
+            return True, node.key, node.value
+        elif key < node.key:
+            return self._search(key, node.left)
+        else:
+            return self._search(key, node.right)
+
+    def search(self, key):
         """ Search a specific key into the BST and return its value """
         if not self.root:
             return False, -1
 
-        if not root:
-            root = self.root
-        if key == self.root.key:
-            return True, self.root.value
-        elif key < self.root.key:
-            return self.search(key, self.left)
-        else:
-            return self.search(key, self.right)
+        return self._search(key, self.root)
+
 
     def delete(self, key):
+        """ Deletes a key from the BST """
         pass
 
+    def _print_inorder(self, node):
+        """Helper Print Function to print inorder binary tree"""
+        if not node:
+            return
+
+        self._print_inorder(node.left)
+        print(node.key, node.value)
+        self._print_inorder(node.right)
+
+    def print_inorder(self):
+        """Prints the BST inorder manner"""
+        self._print_inorder(self.root)
+        
+
+
+if __name__ == "__main__":
+    a = [2, 9, 3, 5, 1, 7, 8]
+    bst = BST()
+    for v in a:
+        bst.insert(v)
+    bst.print_inorder()
+    print(bst.floor(4))
+    print(bst.search(2))
+    print(bst.search(-1))
+    
     
