@@ -10,6 +10,7 @@
  - [Priority Queues](https://github.com/shivammehta007/pythondsa/blob/development/structures/priority_queue.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/development/structures/pylint_scores/priority_queuespy_pylint.out)
   - [Trie](https://github.com/shivammehta007/pythondsa/blob/master/structures/trie.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/triepy_pylint.out)
   - [Heap](https://github.com/shivammehta007/pythondsa/blob/master/structures/heap.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/heappy_pylint.out)
+   - [Binary Search Trees](https://github.com/shivammehta007/pythondsa/blob/master/structures/trees/BinarySearchTree.py): [Pylint Score](https://github.com/shivammehta007/pythondsa/blob/master/structures/pylint_scores/trees/BinarySearchTreepy_pylint.out)
  
  
  ## Searching
